@@ -6,13 +6,13 @@ import './../styles/App.css';
 const App = () => {
   const [name , setName] = useState("");
    function handel(e){
-    let text ="hello" + " "  + (e.target.value) + " " +  "!";
+    let text ="Hello" + " "  + (e.target.value) +  "!";
 
     setName(text)
    }
   return (
     <div>
-       <h1>Enter your name</h1>
+       <p>Enter your name:</p>
        <input type="text" onChange={handel}></input>
         <p>{name}</p>
     </div>
